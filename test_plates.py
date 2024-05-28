@@ -7,3 +7,8 @@ def test_range():
 
 def test_all_alpha():
     assert is_valid('ABCDEF') == True
+
+def test_alnum():
+    assert is_valid('CS50') == True
+    assert is_valid('ABC350') == True
+    assert is_valid('ABC,45') == False
