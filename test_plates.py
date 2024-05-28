@@ -16,3 +16,7 @@ def test_alnum():
 def test_start():
     assert is_valid('123GAB') == False
     assert is_valid('ABC350') == True
+
+def test_first_digit():
+    assert is_valid('ABH023') == False
+    assert is_valid('ABC350') == True
