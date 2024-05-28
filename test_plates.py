@@ -4,3 +4,6 @@ def test_range():
     assert is_valid('AB') == True
     assert is_valid('ABC350') == True
     assert is_valid('ABC12345') == False
+
+def test_all_alpha():
+    assert is_valid('ABCDEF') == True
