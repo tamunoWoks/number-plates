@@ -20,3 +20,7 @@ def test_start():
 def test_first_digit():
     assert is_valid('ABH023') == False
     assert is_valid('ABC350') == True
+
+def test_all_digit():
+    assert is_valid('350') == False
+    assert is_valid('712345') == False
